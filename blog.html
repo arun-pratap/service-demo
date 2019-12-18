@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> DebarEd | A Web Solution </title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet"> <!--open san font regular400 and light 300-->
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--fontawesome 4.7.0 icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<!--fontawesome 5.11.2 icons-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">  <!-- custom CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> <!--animate.css -->
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script><!--JQUERY API-->
+		<script src="js/script.js"></script>
+		
+	</head>
+	
+	<body>
+	   <div class="wrap">
+		 
+		   
+		   <!-- navigation bar-->
+		<header>
+			<div class="logo">
+				<a href ="index.html"><img src="images/logo.png" width="250px" height="70"  alt=""></a>
+			</div>
+			
+			<nav>
+				<li> <a href="index.html" >Home</a> </li>
+				<li> <a id="contact" style="cursor: pointer;" >Contact us</a> </li>
+			</nav>
+			
+			<div class="icon">
+				<a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+			</div>
+		</header><!-- navigation bar end-->
+
+		   
+		  <div style="text-align: center;width:100%;height:45vh;display: grid;align-content: center;">
+			  
+			  <h1 style="top:50%;color:#000;font-weight: bold">Thanks for your visit.</h1>
+			  <p style="color: #000;">
+				  <span><i style="font-size:40px;padding: 15px;" class="fa fa-tools" aria-hidden="true"></i></span><br>
+				  <strong>This page is under maintenance</strong><br>
+			  <strong>Comming soon.</strong></p>
+			  <a style="margin:15px auto; color:#000;background-color:#ffbf00;width: 100px;font-weight: bold;border-radius:3px;padding: 5px; line-height:2;" href="index.html">Back to Home</a>
+		   </div>
+		   
+		   
+		   
+		   <div class="modal-box" id="modal-box">
+				<div class="contact-form">
+					<form>
+						<h1>Contact Information</h1>
+						<hr style="width:99%;margin:auto; height:1px;border:none;background-color: #ccc;margin-bottom:8px;" />
+
+						<div class="label">
+							<label>Name:<span> *</span></label><br>
+							<label>Email:<span> *</span></label><br>
+							<label>Mobile no:<span> *</span></label><br>
+							<label>Website name: &nbsp;&nbsp;</label><br>
+							<label>Purpose of&nbsp;&nbsp;&nbsp;<br>your website:<span> *</span></label><br>
+							<label>Features you want&nbsp;&nbsp;&nbsp;<br>on your website:<span> *</span></label><br>
+							<label>Your project&nbsp;&nbsp;&nbsp;<br> timeframe:<span> *</span></label><br>
+							<label>Project Descripton:<span>*</span></label>
+						</div>
+
+						<div class="input">
+							<input type="text" name ="name" placeholder="Enter Your name" required/><br>	
+							<input type="email" name ="email" placeholder="Enter your email" required/><br>
+							<input type="tel" name ="name" placeholder="Enter your mobile no."/><br>
+							<input type="url" name ="website" placeholder="Enter your website (optional)"/><br>
+
+							<select name="web-purpose" required>
+								<option>Select</option>
+								<option>Personal</option>
+								<option>Business</option>
+							</select><br>
+
+							<select name ="features" required>
+								<option>Select</option>
+								<option>Blog</option>
+								<option>Forms</option>
+								<option>Photo Gallery</option>
+								<option>Video Gallery</option>
+								<option>Survey</option>
+							</select><br>
+
+							<select name="timeframe" required>
+								<option>Immediately</option>
+								<option>1-3 months</option>
+								<option>More than 3 months</option>
+							</select><br>
+
+							<textarea name="project-description" rows="8s" cols="30"></textarea>
+						</div>
+
+						<button>Submit</button>
+						<div class="close">
+							<span>close</span>
+						</div>
+						
+					</form>
+				</div>
+		</div>
+
+		   
+		   
+		   
+		   <footer>
+			 
+			 <div style="width:33.33%;padding-top:18px">
+				<div class="nav">
+					<li> <a  href="index.html" >Home</a> </li>
+					<li> <a href="#services" >Services</a> </li>
+					<li> <a href="#about" >About</a> </li>
+					<li> <a href="#" >Careers</a> </li>
+					<li> <a href="blog.html" >Blogs</a> </li>
+					<li> <a id="contact" style="cursor: pointer">Contact us</a> </li>
+				</div>
+			 </div> 
+			 
+			 
+			 <div style="width:33.33%;padding-top:18px">
+				<div class="icon">
+					<div style="width: 22%;margin: auto;display: grid;height:215px;align-content:center;">
+						<a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i>&nbsp; LinkedIn</a><br>
+						<a href="#"><i class="fab fa-facebook" aria-hidden="true"></i>&nbsp; Facebook</a><br>
+						<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>&nbsp; Instagram</a><br>
+						<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i>&nbsp; Youtube</a>
+					</div>
+					
+				</div>
+			 </div>
+			 
+			 
+			 <div style="width:33.33%;padding-top:18px">
+				<div class="nav" style="border-right: none;">
+					<li> <a  href="#" >Home</a> </li>
+					<li> <a href="#" >Services</a> </li>
+					<li> <a href="#" >About</a> </li>
+					<li> <a href="#" >Careers</a> </li>
+					<li> <a href="#" >Blogs</a> </li>
+					<li> <a href="#" >Contact us</a> </li>
+				</div>
+			 </div>
+
+			 
+			 <hr style="width:98%; height:1px;border:none;background-color: #555;margin:25px auto; "/>
+
+			 
+			 <div style="width: 98%;margin: auto;font-weight: normal;font-size: 12px;">
+				 <div style="float: left;">
+					 <span>Copyright &copy; 2019 Debared. All rights reserved.</span>
+				 </div>
+				 <div style="float:right;">
+					 <a href="">Cookies</a><span>|</span>
+					 <a href="">Privacy</a><span>|</span>
+					 <a href="">Terms</a>
+				 </div>
+			 </div>
+		 </footer>
+	  </div>
+		
+	</body>

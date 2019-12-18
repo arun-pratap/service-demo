@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> A Web Solution </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+	<!--open san font regular400 and light 300-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!--fontawesome icons-->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- custom CSS -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<!--animate.css -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<!--JQUERY API-->
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+	<div class="wrap">
+
+		<!-- navigation bar-->
+		<header>
+			<div class="logo">
+				<a href="index.html"><img style="margin-top:0px;" src="images/logo.png" width="240" height="70"
+						alt=""></a>
+			</div>
+
+			<nav>
+				<li> <a href="index.html">Home</a> </li>
+				<li> <a href="#services">Services</a> </li>
+				<li> <a href="#about">About</a> </li>
+				<li> <a href="#">Careers</a> </li>
+				<li> <a href="blog.html">Blogs</a> </li>
+				<li> <a id="contact" style="cursor: pointer;">Contact us</a> </li>
+			</nav>
+
+			<div class="icon">
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+			</div>
+		</header><!-- navigation bar end-->
+
+
+		<div class="registration row discuss"
+			style="position: absolute;top:70px;right:0;width:390px;background-color:rgba(255, 255, 255, 0.99);height:672px;z-index:1;color:#000;">
+			<form>
+				<h1
+					style="text-align: center;margin-top:1.2rem;margin-bottom:0.70rem;font-size:large;font-weight: 600;">
+					Let's Discuss
+					Project !</h1>
+				<hr
+					style="width:98%;margin:auto; height:1px;border:none;background-color: #ccc;margin-bottom:25px;margin-top:15px;text-align:center;" />
+				<div class="label" style="float: left;">
+					<label>Name:<span> *</span></label><br>
+					<label>Email:<span> *</span></label><br>
+					<label>Mobile no:<span> *</span></label><br>
+					<label>Website name: &nbsp;&nbsp;</label><br>
+					<label>Purpose of&nbsp;&nbsp;&nbsp;<br>your website:<span> *</span></label><br>
+					<label>Features you want&nbsp;&nbsp;&nbsp;<br>on your website:<span> *</span></label><br>
+					<label>Your project&nbsp;&nbsp;&nbsp;<br> timeframe:<span> *</span></label><br>
+					<label>Project Descripton:<span>*</span></label>
+				</div>
+
+				<div class="input" style="float: right;">
+					<input type="text" name="name" placeholder="Enter Your name" required /><br>
+					<input type="email" name="email" placeholder="Enter your email" required /><br>
+					<input type="tel" name="name" placeholder="Enter your mobile no." /><br>
+					<input type="url" name="website" placeholder="Enter your website (optional)" /><br>
+
+					<select name="web-purpose" required>
+						<option>Select</option>
+						<option>Personal</option>
+						<option>Business</option>
+					</select><br>
+
+					<select name="features" required>
+						<option>Select</option>
+						<option>Blog</option>
+						<option>Forms</option>
+						<option>Photo Gallery</option>
+						<option>Video Gallery</option>
+						<option>Survey</option>
+					</select><br>
+
+					<select name="timeframe" required>
+						<option>Immediately</option>
+						<option>1-3 months</option>
+						<option>More than 3 months</option>
+					</select><br>
+
+					<textarea name="project-description"
+						style="margin-left:8px;border:1px solid #555;width:210px;height: 100px;margin-top: 5px;"></textarea>
+				</div>
+				<div class="row">
+					<div class="col" style="position: absolute;width:200px;bottom:38px;left:145px;">
+						<button>Submit</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+		<!--main area-->
+		<main>
+
+			<div class="hero-container">
+				<h2>Web Development Services</h2>
+				<p>Responsive <span style="color: yellow;">Web-Design</span> and Eye-catching user-interface.<br>
+					Latest technology driven development.<br>
+					Improve your business credibility.<br>
+					Take your business online.
+				</p>
+				<a class="request-modal-box">REQUEST A QUOTE</a>
+			</div>
+
+			<div class="modal-box" id="modal-box">
+				<div class="contact-form">
+					<form>
+						<h1>Contact Information</h1>
+						<hr
+							style="width:99%;margin:auto; height:1px;border:none;background-color: #ccc;margin-bottom:8px;" />
+<style>
+	.contact-form label{
+		margin-top: 2px;
+		width:150px;
+	}
+	.contact-form select{
+		margin-top: 28px;
+		margin-left:11px;
+		width:185px; 
+	}
+	.contact-form textarea{
+	
+	}
+</style>
+						<div class="label" style="float: left;">
+					<label>Name:<span> *</span></label><br>
+					<label>Email:<span> *</span></label><br>
+					<label>Mobile no:<span> *</span></label><br>
+					<label>Website name: &nbsp;&nbsp;</label><br>
+					<label>Purpose of&nbsp;&nbsp;&nbsp;<br>your website:<span> *</span></label><br>
+					<label>Features you want&nbsp;&nbsp;&nbsp;<br>on your website:<span> *</span></label><br>
+					<label>Your project&nbsp;&nbsp;&nbsp;<br> timeframe:<span> *</span></label><br>
+					<label>Project Descripton:<span>*</span></label>
+				</div>
+
+				<div class="input" style="float: right;">
+					<input type="text" name="name" placeholder="Enter Your name" required /><br>
+					<input type="email" name="email" placeholder="Enter your email" required /><br>
+					<input type="tel" name="name" placeholder="Enter your mobile no." /><br>
+					<input type="url" name="website" placeholder="Enter your website (optional)" /><br>
+
+					<select name="web-purpose" required>
+						<option>Select</option>
+						<option>Personal</option>
+						<option>Business</option>
+					</select><br>
+
+					<select name="features" required>
+						<option>Select</option>
+						<option>Blog</option>
+						<option>Forms</option>
+						<option>Photo Gallery</option>
+						<option>Video Gallery</option>
+						<option>Survey</option>
+					</select><br>
+
+					<select name="timeframe" required>
+						<option>Immediately</option>
+						<option>1-3 months</option>
+						<option>More than 3 months</option>
+					</select><br>
+
+					<textarea name="project-description"
+						style="margin-left:8px;border:1px solid #555;width:188px;height: 80px;margin-top: 15px;"></textarea>
+				</div>
+							<button style="display: block;margin-top:540px;margin-left: 105px;">Submit</button>
+						<div class="close">
+							<span>close</span>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<!--//////////////////////////////////SECTION //////////////////////////////////-->
+			<section id="services" class="services">
+
+				<div>
+					<div>
+						<h1 style="	padding-top: 45px;font-weight:500;">Our Services</h1>
+					</div>
+
+					<div>
+						<img src="images/html.jpg" width=100% height="">
+					</div>
+
+					<div>
+						<h1>Web Development</h1>
+						<p>We provide innovative and creative web application that match all your needs and goals so
+							that you can grow faster and don't worry about software updates.We always take care of that.
+						</p>
+						<a href="blog.html">Read More</a>
+					</div>
+
+
+					<div>
+						<img src="images/launching.jpg" width=100% height="100%">
+					</div>
+
+					<div>
+						<h1>Testing and Releasing</h1>
+						<p>Before something goes wrong so we conduct automated and manual tests to ensure that your web
+							application is free from bugs or other critical issues and troubleshoot them.</p>
+						<a href="blog.html">Read More</a>
+					</div>
+
+					<div>
+						<img src="images/seo3.png" width=100% height="100%">
+					</div>
+
+					<div>
+						<h1>SEO Service</h1>
+						<p>Search Engine Optimization is the most effective way to get potential customers.It
+							organically increase website traffic by analyzing search engine algorithms.</p>
+						<a href="blog.html" id="about">Read More</a>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="about">
+				<div>
+					<h1 style="font-weight: 500;">About us</h1>
+					<p>Our web development services provide dynamic web applications that helps to achieve your businees
+						goal.
+						Our technical team is capable enough to develop every complex design: from simple code to
+						complex applications.
+						We develop flexible and innovative design that meets all your business need.
+						It's our pleasure to serve you.We value our customers.</p>
+				</div>
+				<div class="subscribe">
+					<form>
+						<fieldset>
+							<legend>
+								<h1>&nbsp;Keep me informed&nbsp;</h1>
+							</legend>
+							<input type="text" placeholder="Enter your name" /><br>
+							<input type="email" placeholder="Enter your email" /><br>
+							<button>Submit</button>
+						</fieldset>
+					</form>
+				</div>
+			</section>
+
+
+		</main>
+		<!--main area end -->
+		<footer>
+
+			<div class="row" style="width: 100%;padding:0.75rem;">
+				<div class="col">
+					<div class="quick-nav">
+						<li> <a href="index.html">Home</a> </li>
+						<li> <a href="#services">Services</a> </li>
+						<li> <a href="#about">About</a> </li>
+						<li> <a href="#">Careers</a> </li>
+						<li> <a href="blog.html">Blogs</a> </li>
+						<li> <a id="contact" href="" style="cursor: pointer">Contact us</a> </li>
+					</div>
+				</div>
+
+
+				<div class="col">
+					<div class="icon">
+						<div>
+							<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp; LinkedIn</a><br>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; Facebook</a><br>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp; Instagram</a><br>
+							<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp; Youtube</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div style="border-right: 0px solid #555;" class="col">
+					<div class=" quick-nav">
+						<li> <a href="#">Home</a> </li>
+						<li> <a href="#">Services</a> </li>
+						<li> <a href="#">About</a> </li>
+						<li> <a href="#">Careers</a> </li>
+						<li> <a href="#">Blogs</a> </li>
+						<li> <a href="#">Contact us</a> </li>
+					</div>
+				</div>
+			</div>
+
+
+			<hr style="width:98%; height:0.8px;border:none;background-color:rgba(85, 85, 85, .8);margin:25px auto; " />
+
+
+			<div style="width: 98%;margin: auto;font-weight: normal;font-size: 12px;">
+				<div style="float: left;">
+					<span>Copyright &copy; 2019 Debared. All rights reserved.</span>
+				</div>
+				<div style="float:right;">
+					<a href="">Cookies</a><span>|</span>
+					<a href="">Privacy</a><span>|</span>
+					<a href="">Terms</a>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+
+</body>
+
+</html>
